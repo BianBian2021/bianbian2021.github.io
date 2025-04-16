@@ -28,11 +28,17 @@
       margin: 30px auto;
       padding: 0 20px;
     }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
     img.profile {
-      float: right;
-      width: 150px;
-      border-radius: 8px;
-      margin-left: 20px;
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-bottom: 20px;
     }
     h2 {
       color: #004080;
@@ -47,24 +53,27 @@
 </head>
 <body>
   <header>
-    <h1>边遍 博士 | 助理教授 </h1>
+    <h1>边遍 博士 | 助理教授</h1>
   </header>
 
   <div class="container">
-    <img src="profile.jpg" alt="边遍" class="profile" />
-
-    <h2>个人简介</h2>
-    <p>
-      边遍，博士，现任日本北里大学助理教授，博士毕业于日本东京大学计算生物与医学专业。
-      主要从事生物大语言模型开发，生物信息学，RNA和蛋白质设计。
-      在mRNA语言模型，蛋白质语言模型以及mRNA翻译速率调控等方面取得了创新成果。
-      共发表SCI/EI期刊论文十余篇，其中以第一作者/通讯作者在《iMeta》、《Journal of Experimental Botany》等权威期刊上发表十余篇。
-      担任《Frontier in Genetics》、《Genome Research》及《Bioinformatics》等多个生物信息领域国际权威SCI期刊的通讯审稿专家。
-    </p>
-    <p>
-      荣获日本学术振兴会特别研究员奖励费，东京大学外国人特别奖励费。
-      主持或参与日本科学技术振兴机构基金等项目。
-    </p>
+    <div class="intro">
+      <div style="flex: 1; min-width: 260px;">
+        <h2>个人简介</h2>
+        <p>
+          边遍，博士，现任日本北里大学助理教授，博士毕业于日本东京大学计算生物与医学专业。
+          主要从事生物大语言模型开发，生物信息学，RNA和蛋白质设计。
+          在mRNA语言模型，蛋白质语言模型以及mRNA翻译速率调控等方面取得了创新成果。
+          共发表SCI/EI期刊论文十余篇，其中以第一作者/通讯作者在《iMeta》、《Journal of Experimental Botany》等权威期刊上发表十余篇。
+          担任《Frontier in Genetics》、《Genome Research》及《Bioinformatics》等多个生物信息领域国际权威SCI期刊的通讯审稿专家。
+        </p>
+        <p>
+          荣获日本学术振兴会特别研究员奖励费，东京大学外国人特别奖励费。
+          主持或参与日本科学技术振兴机构基金等项目。
+        </p>
+      </div>
+      <img src="profile.jpg" alt="边遍照片" class="profile" />
+    </div>
 
     <h2>教育经历</h2>
     <ul>
