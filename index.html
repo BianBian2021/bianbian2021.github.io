@@ -1,96 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bian Bian | Academic Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>崔社强 博士主页</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: "Helvetica Neue", sans-serif;
+      line-height: 1.8;
       margin: 0;
       padding: 0;
-      background: #f7f9fc;
+      background-color: #fdfdfd;
       color: #333;
     }
     header {
-      background: #004080;
+      background-color: #004080;
       color: white;
-      padding: 40px;
       text-align: center;
+      padding: 30px 10px;
     }
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.2em;
+    }
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    img.profile {
+      float: right;
+      width: 150px;
+      border-radius: 8px;
+      margin-left: 20px;
     }
     h2 {
       color: #004080;
       margin-top: 40px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 4px;
     }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    .paper, .project {
-      margin-bottom: 20px;
-    }
-    .paper-title, .project-title {
-      font-weight: bold;
-    }
-    .paper-journal {
-      font-style: italic;
-      color: #555;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      margin: 50px 0;
+    ul {
+      padding-left: 1.2em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bian Bian</h1>
-    <p>Ph.D.  | mRNA Design | AI for Biology</p>
-    <p>Email: anbinan1902@gmail.com | GitHub: <a href="https://github.com/BianBian2021" style="color: white; text-decoration: underline">BianBian2021</a></p>
+    <h1>崔社强 博士 | 教授 | 博士生导师</h1>
   </header>
 
-  <section>
-    <h2>About Me</h2>
+  <div class="container">
+    <img src="profile.jpg" alt="崔社强" class="profile" />
+
+    <h2>个人简介</h2>
     <p>
-      I am a project assistant professor focusing on deep learning for mRNA model. My work includes developing generative models for mRNA sequence design, circular RNA analysis, and computational modeling of translation efficiency.
+      崔社强，博士，教授，博士生导师，国家海外引进高层次青年人才（中组部海外人才计划），山东大学杰出中青年学者。
+      主要从事非饱和土力学和多场耦合条件下地基结构变形机理与防控技术研究。
+      在非饱和土-热-水-力多场耦合机制及本构模型、地基热储结构（能源桩、能源隧道等）热力耦合性态等方面取得了创新成果。
+      共发表SCI/EI期刊论文30余篇，其中以第一作者/通讯作者在《Geotechnique》、《Journal of Geotechnical and Geoenvironmental Engineering (ASCE)》、《Canadian Geotechnical Journal》、《Computers and Geotechnics》等权威期刊上发表十余篇。
+      担任《Journal of Geotechnical and Geoenvironmental Engineering (ASCE)》、《Canadian Geotechnical Journal》及《Journal of Rock Mechanics and Geotechnical Engineering》等多个中外土工领域国际权威SCI期刊的通讯审稿专家。
+    </p>
+    <p>
+      荣获香港工程师学会（HKIE）颁发的2023-2024年度香港工程师学会第九届优秀博士论文奖（HKIE Ringo Yu Prize for Best PhD Thesis in Geotechnical Studies），该奖项是香港在土工领域年度最佳博士论文。
+      主持或参与国家自然科学基金、国家重点研发计划以及香港研究局重点专项等项目。
     </p>
 
-    <h2>Selected Projects</h2>
-    <div class="project">
-      <div class="project-title">Pro2RNA: A Multimodal Reverse Translation Model</div>
-      <p>Built a model that generates mRNA from protein sequences and taxonomy using pretrained models including ESM2, SciBERT, and a custom decoder.</p>
-    </div>
-    <div class="project">
-      <div class="project-title">mRNAdesigner: Pretrained mRNA Language Model</div>
-      <p>Pretrained from scratch using bacterial sequences across all domains of life for mRNA generation and optimization.</p>
-    </div>
+    <h2>教育经历</h2>
+    <ul>
+      <li>2012–2016 中国农业大学，本科</li>
+      <li>2016–2019 山东大学，硕士</li>
+      <li>2019–2023 香港理工大学，博士</li>
+    </ul>
 
-    <h2>Publications</h2>
-    <div class="paper">
-      <div class="paper-title">Pro2RNA: A Pretrained Multimodal Reverse Translation Model for mRNA Design</div>
-      <div class="paper-journal">Bioinformatics, Under Review</div>
-    </div>
-    <div class="paper">
-      <div class="paper-title">Multi-omics guided mRNA sequence generation with enhanced translational efficiency</div>
-      <div class="paper-journal">Synthetic Biology Journal, 2024</div>
-    </div>
+    <h2>工作经历</h2>
+    <ul>
+      <li>2022.9–2023.1 香港理工大学，研究助理</li>
+      <li>2023.1–2025.1 香港理工大学，博士后</li>
+      <li>2025.1 至今 山东大学，教授、博导</li>
+    </ul>
 
-    <h2>Contact</h2>
-    <p>Email: bian@example.com</p>
-    <p>GitHub: <a href="https://github.com/BianBian2021">BianBian2021</a></p>
-  </section>
+    <h2>研究方向</h2>
+    <ul>
+      <li>非饱和土力学与本构模型</li>
+      <li>地下能源结构（能源桩、能源隧道等）热力耦合特性</li>
+      <li>气候变化条件下降基工程多场耦合变化机理</li>
+      <li>机器学习、无网格化高性能数值模拟</li>
+    </ul>
 
-  <footer>
-    &copy; 2025 Bian Lingxian. All rights reserved.
-  </footer>
+    <h2>代表性论文</h2>
+    <ul>
+      <li>
+        <strong>S.Q. Cui</strong> and C. Zhou (2025), “Thermally induced displacement of soil-structure interface at saturated and unsaturated conditions”, <em>Canadian Geotechnical Journal (Accepted)</em>.
+      </li>
+      <li>
+        <strong>S.Q. Cui</strong>, C. Zhou, Q.Y. Mu, H.F. Pei and J.H. Yin (2024), “Coupled effects of temperature and suction on the shear behaviour of saturated and unsaturated clay-seam structure interfaces”, <em>Geotechnique, 75(2)</em>: 278–290.
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
-
 
