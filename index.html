@@ -1,112 +1,288 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>边遍 博士主页</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>邊 遍 | Academic Homepage</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
-      line-height: 1.8;
+      font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdfdfd;
+      background: #f7f9fc;
       color: #333;
+      line-height: 1.7;
     }
     header {
-      background-color: #004080;
+      background: #004080;
       color: white;
+      padding: 48px 24px;
       text-align: center;
-      padding: 30px 10px;
     }
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2.6em;
     }
-    .container {
-      max-width: 960px;
-      margin: 30px auto;
-      padding: 0 20px;
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1.1em;
+      opacity: 0.95;
     }
-    .intro {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
+    .header-contact {
+      margin-top: 14px;
+      font-size: 0.98em;
     }
-    img.profile {
-      width: 180px;
-      height: auto;
-      border-radius: 10px;
-      margin-left: auto;
-      margin-bottom: 20px;
+    .header-contact a {
+      color: white;
+      text-decoration: underline;
+    }
+    section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 24px;
     }
     h2 {
       color: #004080;
-      margin-top: 40px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 4px;
+      margin-top: 38px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #d9e6f5;
+      padding-bottom: 6px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 18px;
+    }
+    .timeline-item, .paper {
+      margin-bottom: 14px;
+    }
+    .date {
+      font-weight: bold;
+      color: #004080;
+      min-width: 110px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .content {
+      display: inline-block;
+      max-width: calc(100% - 120px);
     }
     ul {
-      padding-left: 1.2em;
+      padding-left: 22px;
+      margin-top: 8px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .paper-title {
+      font-weight: bold;
+    }
+    .paper-meta {
+      color: #555;
+      font-size: 0.96em;
+    }
+    .note {
+      color: #666;
+      font-size: 0.95em;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin: 50px 0 30px;
+      padding: 0 20px;
+    }
+    a {
+      color: #004080;
+    }
+    @media (max-width: 700px) {
+      .date, .content {
+        display: block;
+        max-width: 100%;
+      }
+      .date {
+        margin-bottom: 4px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>边遍 博士 | 助理教授</h1>
+    <h1>邊 遍（Bian Bian）</h1>
+    <div class="subtitle">北里大学 未来工学部 生物工学インフォマティクス研究室 特任助教</div>
+    <div class="header-contact">
+      Email: <a href="mailto:bian.bian@kitasato-u.ac.jp">bian.bian@kitasato-u.ac.jp</a>
+    </div>
   </header>
 
-  <div class="container">
-    <div class="intro">
-      <div style="flex: 1; min-width: 260px;">
-        <h2>个人简介</h2>
-        <p>
-          边遍，博士，现任日本北里大学助理教授，博士毕业于日本东京大学计算生物与医学专业。
-          主要从事生物大语言模型开发，生物信息学，RNA和蛋白质设计。
-          在mRNA语言模型，蛋白质语言模型以及mRNA翻译速率调控等方面取得了创新成果。
-          共发表SCI/EI期刊论文十余篇，其中以第一作者/通讯作者在《iMeta》、《Journal of Experimental Botany》等权威期刊上发表十余篇。
-          担任《iMeta》青年编委，同时担任《Frontier in Genetics》、《Genome Research》及《Bioinformatics》等多个生物信息领域国际权威SCI期刊的审稿专家。
-        </p>
-        <p>
-          荣获日本学术振兴会特别研究员奖励费，东京大学外国人特别奖励费。
-          主持或参与日本科学技术振兴机构基金等项目。
-        </p>
-      </div>
-      <img src="profile.jpg" alt="边遍照片" class="profile" />
+  <section>
+    <h2>自己紹介</h2>
+    <div class="card">
+      <p>
+        人工知能と生命科学の融合領域において研究を行っています。特に、
+        mRNA配列設計、生成型RNA言語モデル、マルチモーダル分子設計を中心に、
+        核酸医薬、mRNAワクチン、RNAアプタマー、合成生物学への応用を目指しています。
+      </p>
+      <p>
+        近年は、大規模mRNA言語モデルや逆翻訳モデルの開発を通じて、
+        配列の「理解」と「生成」を統合する基盤モデルの構築、および
+        タンパク質配列から宿主適応的なmRNA coding sequenceを設計する研究に取り組んでいます。
+      </p>
     </div>
 
-    <h2>教育经历</h2>
-    <ul>
-      <li>2021–2024 日本东京大学，计算生物与医学 博士</li>
-      <li>2017–2019 日本东京大学，应用生命化学 硕士</li>
-      <li>2012–2016 中国农业大学，农学学士</li>
-    </ul>
+    <h2>研究分野</h2>
+    <div class="card">
+      <ul>
+        <li>mRNA設計・核酸医薬設計</li>
+        <li>生体大規模言語モデル（RNA / Protein）</li>
+        <li>マルチモーダルAI（Protein–RNA統合）</li>
+        <li>生成モデルによる分子設計</li>
+        <li>翻訳効率・配列安定性・宿主依存的最適化</li>
+      </ul>
+    </div>
 
-    <h2>工作经历</h2>
-    <ul>
-      <li>2024.10–至今 日本北里大学，助理教授</li>
-      <li>2022.2–2024.3 日本产业技术综合研究所人工智能研究中心，研究助理</li>
-      <li>2020.4-2021.3 日本东京大学，JSPS 特别研究员</li>
-    </ul>
+    <h2>学歴</h2>
+    <div class="card">
+      <div class="timeline-item">
+        <span class="date">2024年9月</span>
+        <span class="content">
+          東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 博士課程修了<br />
+          博士（科学）取得（東京大学）
+        </span>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2019年3月</span>
+        <span class="content">
+          東京大学大学院 農学生命科学研究科 応用生命化学専攻 修士課程修了
+        </span>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2016年6月</span>
+        <span class="content">
+          中国農業大学 農学部 施設農業科学と工程 卒業
+        </span>
+      </div>
+    </div>
 
-    <h2>研究方向</h2>
-    <ul>
-      <li>生物大语言模型开发</li>
-      <li>mRNA、蛋白质及生物大分子设计</li>
-      <li>大规模多组学分析</li>
-      <li>深度学习算法及生物信息学</li>
-    </ul>
+    <h2>職歴</h2>
+    <div class="card">
+      <div class="timeline-item">
+        <span class="date">2024年10月 ～ 現在</span>
+        <span class="content">
+          北里大学 未来工学部 生物工学インフォマティクス研究室 特任助教
+        </span>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2022年2月 ～ 2024年3月</span>
+        <span class="content">
+          産業技術総合研究所 人工知能研究センター リサーチアシスタント（契約職員）
+        </span>
+      </div>
+    </div>
 
-    <h2>代表性论文</h2>
-    <ul>
-      <li>
-        <strong>Bian Bian</strong> and Yutaka Saito (2023), “VeloPro: A pipeline integrating Ribo-seq and AlphaFold deciphers association patterns between translation velocity and protein structure features”, <em>iMeta</em>.
-      </li>
-      <li>
-        <strong>Bian Bian</strong>, S. Kageshima, T. Kamiya and T. Fujiwara (2018), “Screening Arabidopsis thaliana mutants for low sensitivity to manganese identifies novel alleles of NRAMP1 and PGSIP6”, <em>Journal of Experimental Botany, 68(7)</em>: 1795-1803.
-      </li>
-    </ul>
-  </div>
+    <h2>Editorial Activities</h2>
+    <div class="card">
+      <p>Young Editor for <strong>iMeta</strong>, <strong>iMetaOmics</strong> and <strong>iMetaMed</strong></p>
+    </div>
+
+    <h2>主要研究テーマ</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Pro2RNA</strong>：タンパク質配列とtaxonomy情報からmRNA coding sequenceを生成するマルチモーダル逆翻訳モデル</li>
+        <li><strong>mRNA-GPT</strong>：大規模mRNAコーディング配列から学習した生成型mRNA言語基盤モデル</li>
+        <li><strong>NUWA</strong>：mRNAの理解と生成を統合した大規模mRNA foundation model</li>
+        <li><strong>VeloPro</strong>：Ribo-seqとAlphaFoldを統合し、翻訳速度とタンパク質構造特徴の関連を解析するパイプライン</li>
+      </ul>
+    </div>
+
+    <h2>主要な論文（*責任著者）</h2>
+    <div class="card">
+      <div class="paper">
+        <div class="paper-title">1. Dingnan Jin, Bian Bian*, Yutaka Saito.</div>
+        <div>CancerSubtypeXplore: A modular platform for multi-omics cancer subtype prediction and biomarker consensus discovery.</div>
+        <div class="paper-meta">Computational and Structural Biotechnology Journal, 28, 2026.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">2. Bian Bian, Yiming Zhang, Jichen Zhang, Kiyoshi Asai, Yutaka Saito.</div>
+        <div>Designing mRNA coding sequence via multimodal reverse translation language modeling with Pro2RNA.</div>
+        <div class="paper-meta">bioRxiv (2026): 2026-3.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">3. Bian Bian, Yiming Zhang, Hongmin Li, Jiuzhou Zhong, Yutaka Saito.</div>
+        <div>Large generative mRNA language foundation model for efficient coding sequence generation and design with mRNA-GPT.</div>
+        <div class="paper-meta">bioRxiv (2025): 2025-12.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">4. Yunshan Zhong, Weiqi Yan, Yiming Zhang, Kuanhuan Tan, Yutaka Saito, Bian Bian*.</div>
+        <div>Large mRNA language foundation modeling with NUWA for unified sequence perception and generation.</div>
+        <div class="paper-meta">bioRxiv (2025): 2025-11.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">5. Yiming Zhang, Bian Bian, Manabu Okumura.</div>
+        <div>Hyena architecture enables fast and efficient protein language modeling.</div>
+        <div class="paper-meta">iMetaOmics, 2: e45, 2025.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">6. Luo Hao, Zeng Meiyin, Chen Lei, Ma Tengfei, Li Xiaofang, Zheng Maosheng, Zhou Xin, Chen Liang, Xi Jiao, Lu Hongye, Cao Huiluo, Ma Xiaoya, Bian Bian, Zhang Pengfan et al.</div>
+        <div>Unveiling microbial communities with EasyAmplicon: A user-centric guide to perform amplicon sequencing data analysis.</div>
+        <div class="paper-meta">iMetaOmics, 2024.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">7. Bian Bian, Toshitaka Kumagai, Yutaka Saito.</div>
+        <div>VeloPro: A pipeline integrating Ribo-seq and AlphaFold deciphers association patterns between translation velocity and protein structure features.</div>
+        <div class="paper-meta">iMeta, e148, 2023. (IF = 33.2)</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">8. Yong-Xin Liu, Tao Wen, Tengfei Ma, Maosheng Zheng, Xin Zhou, Liang Chen, Xu-Bo Qian, Jiao Xi, Yuan Qin, Xiao-Ning Zhang, Zhi-Wen Zhai, Rui Dai, Huiluo Cao, Xiaoya Ma, Bian Bian, Pengfan Zhang et al.</div>
+        <div>EasyAmplicon: An easy-to-use, open-source, reproducible, and community-based pipeline for amplicon data analysis in microbiome research.</div>
+        <div class="paper-meta">iMeta, 2, e83, 2023.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">9. Naoyuki Sotta, Bian Bian, Danhan Peng, Phattharawan Hongkham, Takehiro Kamiya, Satoshi Niikura, Toru Fujiwara.</div>
+        <div>Local boron concentrations in tuberous roots of Japanese radish (Raphanus sativus L.) negatively correlate with distribution of brown heart.</div>
+        <div class="paper-meta">Plant Physiology and Biochemistry, 136, 58–66, 2019.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">10. Bian Bian, Sae Kageshima, Kenji Yano, Toru Fujiwara, Takehiro Kamiya.</div>
+        <div>Screening Arabidopsis thaliana mutants for low sensitivity to manganese identifies novel alleles of NRAMP1 and PGSIP6.</div>
+        <div class="paper-meta">Journal of Experimental Botany, 69(7), 1795–1803, 2018.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">11. Cheng-Gang Ren, Cun-Cui Kong, Bian Bian, Wei Liu, Yan Li, Yong-Ming Luo, Zhi-Hong Xie.</div>
+        <div>Enhanced phytoremediation of soils contaminated with PAHs by arbuscular mycorrhiza and rhizobium.</div>
+        <div class="paper-meta">International Journal of Phytoremediation, 19(9), 789–797, 2017.</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">12. Cheng-Gang Ren, Yue-Jie Bai, Cun-Cui Kong, Bian Bian, Zhi-Hong Xie.</div>
+        <div>Synergistic interactions between salt-tolerant rhizobia and arbuscular mycorrhizal fungi on salinity tolerance of Sesbania cannabina plants.</div>
+        <div class="paper-meta">Journal of Plant Growth Regulation, 35(4), 1098–1107, 2016.</div>
+      </div>
+    </div>
+
+    <h2>連絡先</h2>
+    <div class="card">
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:bian.bian@kitasato-u.ac.jp">bian.bian@kitasato-u.ac.jp</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Bian Bian. All rights reserved.
+  </footer>
 </body>
 </html>
-
